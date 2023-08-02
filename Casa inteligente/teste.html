@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ff0000, #00ff00);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gradient-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(to bottom, #ff0000, #00ff00);
+            overflow: hidden;
+        }
+
+        .image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-container">
+        <img class="image" src="2cubox_edit.jpeg" alt="Imagem de exemplo">
+    </div>
+</body>
+
+</html>
